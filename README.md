@@ -1,6 +1,6 @@
 # Remit Reconciliation Engine
 
-**Live demo:** _URL will be added right after the first Streamlit Community Cloud deploy — see [Deploying](#deploying)._
+**Live demo: [remit-reconciliation-engine.streamlit.app](https://remit-reconciliation-engine.streamlit.app/)** — no login, no install; refreshed with a new synthetic remit cycle every 30 minutes by GitHub Actions.
 
 An end-to-end analytics engineering project that reconciles **synthetic**
 utility-billing payments against remittances: Python data generator → DuckDB
