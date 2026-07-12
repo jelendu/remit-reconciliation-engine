@@ -52,7 +52,7 @@ SERVICE_TYPES = ["Electric", "Gas", "Water", "Electric+Gas"]
 PAYMENT_METHODS = ["ACH", "Card", "Check", "Lockbox"]
 CHARGE_TYPES = ["Energy", "Delivery", "Base Fee", "Rider", "Tax Surcharge"]
 ADJ_REASONS = ["LATE_FEE_WAIVER", "METER_CORRECTION", "GOODWILL_CREDIT",
-               "RETURNED_PAYMENT_FEE", "BUDGET_TRUEUP"]
+               "RETURNED_PAYMENT_FEE", "BUDGET_TRUEUP", "SERVICE_CANCELLATION"]
 
 # Scenario -> weight. Each scenario exists to exercise a specific recon path.
 SCENARIOS = {

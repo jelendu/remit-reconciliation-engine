@@ -1,18 +1,29 @@
 # Remit Reconciliation Engine
 
-**Live demo: [remit-reconciliation-engine.streamlit.app](https://remit-reconciliation-engine.streamlit.app/)** — no login, no install; refreshed with a new synthetic remit cycle every 30 minutes by GitHub Actions.
+[![dbt CI](https://github.com/jelendu/remit-reconciliation-engine/actions/workflows/dbt-ci.yml/badge.svg)](https://github.com/jelendu/remit-reconciliation-engine/actions/workflows/dbt-ci.yml)
+[![Scheduled data refresh](https://github.com/jelendu/remit-reconciliation-engine/actions/workflows/refresh-data.yml/badge.svg)](https://github.com/jelendu/remit-reconciliation-engine/actions/workflows/refresh-data.yml)
 
-An end-to-end analytics engineering project that reconciles **synthetic**
-utility-billing payments against remittances: Python data generator → DuckDB
-warehouse → dbt (staging / intermediate / marts, 43 tests) → Streamlit
-dashboard, with GitHub Actions running CI and a scheduled "live feed"
-refresh that appends a new remit cycle every 30 minutes.
+**Live demo: [remit-reconciliation-engine.streamlit.app](https://remit-reconciliation-engine.streamlit.app/)** — no login, no install. A GitHub Action appends a new synthetic remit cycle **every 30 minutes**, reruns the full dbt build + tests, and the app redeploys — it is a live pipeline, not a static snapshot.
 
-> **All data is 100% synthetic and self-generated.** No real company names,
-> account numbers, customer data, or proprietary business rules. The project
-> generalizes a common remittance-reconciliation pattern in generic terms.
+Payments come in. The books say something else. This engine finds every mismatch — automatically.
 
-## What it does
+A production-style rebuild of a real reconciliation workflow: a utility-billing remittance feed that **changes every cycle** (payments post, services get cancelled, adjustments land — originally SQL Server extracts reconciled in Excel), rebuilt as a tested SQL pipeline that repairs what it can, proves what it did, and routes what it can't fix to a human.
+
+> **All data is 100% synthetic and self-generated.** No real company names, account
+> numbers, customer data, or proprietary business rules — the project generalizes
+> a common remittance-reconciliation pattern in generic terms.
+
+## The app (start here)
+
+| Page | What you'll see |
+|---|---|
+| 🧭 **The problem** | The 60-second story: why this exists, how the engine works, live stats, one-click guided demos |
+| 🔬 **Reconciliation workbench** | Pick any account — or jump to "duplicate repaired" / "manual review" / "misreported export" — and watch all four checks run with the actual math, before/after zero-out |
+| 📊 **Operations dashboard** | Cycle KPIs with deltas, match-rate trend, failed-checks breakdown, exception queues, CSV export |
+| 🛠️ **Pipeline & tests** | The dbt lineage DAG and all 43 test results **rendered from dbt's own artifacts**, plus the live refresh commit feed |
+| 👋 **About this build** | What each part demonstrates, honest limits, next steps |
+
+## The reconciliation logic
 
 Per account and remit cycle, four checks:
 
@@ -23,23 +34,21 @@ Per account and remit cycle, four checks:
 | 3 | Adjustment | `SUM(AdjustmentAmt) = Adjustments` |
 | 4 | R-C | `(CustCharge + Adjustments) − Remit = reported "R-C" difference` |
 
-**Zero-out dedupe:** when duplicate dollar amounts inflate a detail column,
-the engine zeroes the duplicate occurrences (it never alters or deletes a
-real amount) until the column ties to its summary target. Zeroing is applied
-only while it moves the sum *toward* the target — including duplicated
+**Zero-out dedupe:** when duplicate dollar amounts inflate a detail column, the
+engine zeroes the duplicate occurrences (it never alters or deletes a real
+amount) until the column ties to its summary target — including duplicated
 credits, which deflate a column instead of inflating it. Anything still
-unmatched afterwards is flagged for **manual review**. Every zero-out gets a
-SOX-style adjustment note requiring manager approval.
-
-**Status:** `GREEN` if all four checks pass, `RED` otherwise, with per-check
-pass/fail, notes, and a color-coded export view.
+unmatched goes to **manual review**, and every repair carries a SOX-style
+adjustment note requiring manager approval. The rule is implemented once, as a
+parameterized dbt macro ([`zero_out_dedupe`](dbt_project/macros/zero_out_dedupe.sql)),
+instantiated three times, and **enforced by tests** — not by a promise.
 
 ## Architecture
 
 ```mermaid
 flowchart LR
-    subgraph gen[Synthetic data]
-        G["data_gen/generate.py<br/>seeded scenarios:<br/>clean / dup / mismatch /<br/>misreport / total-fail"]
+    subgraph gen[Synthetic billing feed]
+        G["data_gen/generate.py<br/>payments · cancellations ·<br/>adjustments · seeded failures"]
     end
     subgraph wh[warehouse/raw.duckdb]
         R[(raw schema)]
@@ -47,86 +56,70 @@ flowchart LR
         I["intermediate<br/>zero-out dedupe +<br/>per-check rollup"]
         M["marts<br/>star schema +<br/>fct_reconciliation +<br/>recon_export"]
     end
-    D["dashboard/app.py<br/>Streamlit"]
+    D["Streamlit app<br/>5 pages incl. workbench +<br/>pipeline evidence"]
     G -->|CSV / Parquet| R
     R --> S --> I --> M --> D
 
     subgraph gha[GitHub Actions]
         CI["dbt-ci.yml<br/>dbt build on push"]
-        REF["refresh-data.yml<br/>every 30 min: append batch,<br/>dbt build, commit warehouse"]
+        REF["refresh-data.yml<br/>every 30 min: append cycle,<br/>dbt build + 43 tests, commit"]
     end
     REF -->|new commit| D
 ```
 
-dbt lineage: `raw` sources → 8 staging views → 4 intermediate models (three
-`zero_out_dedupe` macro instantiations + a summary-driven rollup so accounts
-with zero detail rows are still evaluated) → 6 marts (`dim_account`, three
-fact tables carrying original *and* adjusted amounts with `is_duplicate` /
-`is_zeroed` flags, `fct_reconciliation`, `recon_export`).
+The original workflow's source was SQL Server; here a deterministic generator
+emulates the moving billing system so every recon path is demonstrable — clean
+passes, duplicate-inflated columns (fixable), real shortfalls (unfixable),
+summary drift, misreported exports, disclosed known differences.
 
-## Data quality
+## Engineering evidence
 
-43 dbt tests run on every build and in CI:
+- **18 dbt models** across staging → intermediate → marts (star schema)
+- **43 dbt tests** on every build: `unique`/`not_null` on every key,
+  `relationships` to `dim_account`, `accepted_values` on status, and two
+  singular tests that encode the business rule itself:
+  - [`assert_zero_out_reconciles_or_flags`](dbt_project/tests/assert_zero_out_reconciles_or_flags.sql) —
+    passed checks must tie out within $0.01; unmatched accounts must be flagged
+  - [`assert_only_duplicates_zeroed`](dbt_project/tests/assert_only_duplicates_zeroed.sql) —
+    only duplicates may be zeroed; amounts are `0` or untouched, never edited
+- **CI** runs the full build on every push; the **scheduled refresh** re-tests
+  every 30 minutes on fresh data before committing
+- The app's Pipeline page renders the lineage DAG and test results **from
+  dbt's own `manifest.json` / `run_results.json`** — republished each run
 
-- `unique` / `not_null` on every primary key, staging through marts
-- `relationships` from each fact table to `dim_account`
-- `accepted_values` on status (`GREEN`/`RED`)
-- **Singular test — zero-out tolerance:** every check marked passed must tie
-  out within $0.01 after dedupe, and every account still unmatched after
-  zeroing must carry the manual-review flag
-- **Singular test — zero-out safety:** only duplicate occurrences may be
-  zeroed, and an adjusted amount must be exactly `0` or the untouched
-  original — real amounts are never altered
+## Repo tour
 
-The generator seeds every path on purpose (verified verdicts from the base
-batch — the engine never sees these labels):
-
-| Seeded scenario | Engine verdict |
-|---|---|
-| clean (67) | GREEN |
-| duplicate payment / charge / adjustment rows (29) | GREEN via zero-out, SOX note pending approval |
-| real underpayment, summary drift, seeded total failure (16) | RED + manual review |
-| phantom R-C difference on export (4) | RED (R-C check) |
-| disclosed known difference (3) | GREEN, difference surfaced as outstanding |
-| duplicate **plus** real shortfall (1) | RED + manual review — engine refuses to zero a duplicate that cannot produce a match |
+```
+data_gen/         synthetic generator (11 seeded scenario types) + CSV/Parquet output
+warehouse/        DuckDB loader + the bundled warehouse the app reads
+dbt_project/      models (staging/intermediate/marts), macros, tests, artifacts
+orchestration/    one-shot refresh entrypoint used locally and by Actions
+dashboard/        Streamlit app: app.py + ui.py + views/ (5 pages)
+.github/workflows dbt CI + 30-minute scheduled refresh
+```
 
 ## Run it locally
 
 ```bash
 python -m venv .venv && . .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python data_gen/generate.py            # base build (batch B0001)
-python warehouse/load_raw.py           # load DuckDB raw schema
-cd dbt_project && dbt build --profiles-dir . && cd ..
+python orchestration/refresh.py --base         # generate → load → dbt build (61 items)
 streamlit run dashboard/app.py
 ```
 
-Simulate the live feed locally: `python orchestration/refresh.py` (appends
-one cycle and rebuilds; run it again for another).
-
-## Deploying
-
-Streamlit Community Cloud (free): share.streamlit.io → New app → pick this
-repo, branch `main`, main file `dashboard/app.py`. The scheduled
-`refresh-data.yml` workflow commits a refreshed warehouse every 30 minutes
-and Streamlit redeploys automatically, so the public dashboard behaves like
-a live-feed tool rather than a static snapshot.
+Simulate the live feed: `python orchestration/refresh.py` appends one cycle
+and rebuilds; run it again for another.
 
 ## What's live today vs. next steps
 
-**Live today (everything in this repo actually runs):**
-- Synthetic generator with 11 seeded scenario types, CSV + Parquet output
-- DuckDB warehouse, dbt project with 18 models / 43 passing tests
-- Zero-out dedupe as a reusable, tested dbt macro
-- Streamlit dashboard with match rate, trend, color-coded export,
-  manual-review and SOX approval queues, account drill-down
-- CI (`dbt build` on push) and the 30-minute scheduled refresh
+**Live (everything in this repo actually runs and is deployed):** generator,
+DuckDB warehouse, dbt models + tests, zero-out macro, the 5-page app, CI, the
+30-minute scheduled refresh, the public deployment.
 
-**Documented next steps (not built here):**
-- Swap the dbt profile target to Snowflake/BigQuery for a cloud-warehouse
-  deployment — models are warehouse-agnostic SQL (see
-  `dbt_project/profiles.yml`)
-- Replace the committed `.duckdb` file with object storage (committing a
-  binary every 30 minutes grows git history; fine for a demo, wrong for prod)
-- Incremental dbt models instead of full rebuilds once volume warrants it
-- Alerting (e.g. Slack webhook) when match rate drops below a threshold
+**Documented next steps (deliberately not built):**
+- Swap the dbt target to Snowflake/BigQuery (models are warehouse-agnostic —
+  see [`profiles.yml`](dbt_project/profiles.yml))
+- Object storage instead of committing the `.duckdb` (git history growth)
+- Incremental models once volume warrants it
+- Match-rate threshold alerting (e.g. Slack webhook)
+- Persisted approvals (the workbench approval button is a UI demo)
