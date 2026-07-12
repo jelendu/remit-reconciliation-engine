@@ -1,0 +1,11 @@
+# Local + CI profile. Run dbt from inside dbt_project/ (path is cwd-relative).
+# Cloud-warehouse next step: add a `snowflake:` or `bigquery:` output here and
+# `dbt build --target snowflake` — models are warehouse-agnostic SQL.
+remit_recon:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: ../warehouse/raw.duckdb
+      schema: main
+      threads: 4

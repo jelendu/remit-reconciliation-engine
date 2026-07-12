@@ -1,0 +1,123 @@
+account_id,customer_name,service_type,city,state,enrolled_date
+ACCT-000001,Dorian Abernathy,Water,Copper Ridge,AZ,2023-05-17
+ACCT-000002,Esme Xanthos,Electric,Fox Hollow,PA,2025-01-21
+ACCT-000003,Silas Northcott,Electric,Harborview,MI,2022-03-03
+ACCT-000004,Greta Hartsfield,Electric,Harborview,MI,2025-02-23
+ACCT-000005,Wendell Underhill,Electric+Gas,Fox Hollow,PA,2023-03-28
+ACCT-000006,Silas Ives,Electric,Windmere,WI,2022-11-23
+ACCT-000007,Nolan Kessler,Water,Elm Grove,IN,2022-11-15
+ACCT-000008,Yusuf Kessler,Electric,Fox Hollow,PA,2022-07-09
+ACCT-000009,Dorian Lindqvist,Water,Stonebridge,VA,2023-06-26
+ACCT-000010,Xiomara Okonkwo,Electric,Milldale,OH,2024-02-15
+ACCT-000011,Rosa Joubert,Water,Harborview,MI,2025-03-28
+ACCT-000012,Wendell Castellano,Electric,Fox Hollow,PA,2023-04-12
+ACCT-000013,Celia Blackwell,Gas,Larkspur,CO,2022-07-26
+ACCT-000014,Imani Okonkwo,Water,Stonebridge,VA,2022-11-30
+ACCT-000015,Lionel Goldwyn,Water,Gullport,FL,2022-05-27
+ACCT-000016,Ulric Fairbanks,Gas,Pinehurst Flats,NC,2022-12-01
+ACCT-000017,Mira Ives,Gas,Windmere,WI,2023-10-27
+ACCT-000018,Hollis Ashgrove,Electric,Milldale,OH,2023-10-09
+ACCT-000019,Imani Castellano,Gas,Stonebridge,VA,2025-03-07
+ACCT-000020,Kaia Goldwyn,Electric+Gas,Elm Grove,IN,2024-03-21
+ACCT-000021,Odette Eastwick,Water,Copper Ridge,AZ,2022-10-13
+ACCT-000022,Xiomara Rosewater,Water,Fox Hollow,PA,2025-04-12
+ACCT-000023,Cormac Sablewood,Electric+Gas,Stonebridge,VA,2024-01-12
+ACCT-000024,Esme Quintrell,Electric+Gas,Fox Hollow,PA,2022-07-06
+ACCT-000025,Beatrix Dunmore,Gas,Milldale,OH,2022-11-24
+ACCT-000026,Nolan Thackeray,Electric,Copper Ridge,AZ,2024-02-28
+ACCT-000027,Tamsin Okonkwo,Water,Stonebridge,VA,2025-02-07
+ACCT-000028,Vera Xanthos,Electric,Milldale,OH,2025-01-04
+ACCT-000029,Yusuf Underhill,Water,Larkspur,CO,2022-08-17
+ACCT-000030,Nolan Fairbanks,Electric+Gas,Larkspur,CO,2022-01-07
+ACCT-000031,Cormac Xanthos,Water,Elm Grove,IN,2024-10-22
+ACCT-000032,Quentin Dovetail,Electric,Cedar Bluff,TN,2023-09-04
+ACCT-000033,Quentin Thackeray,Gas,Copper Ridge,AZ,2022-11-10
+ACCT-000034,Yusuf Fairbanks,Electric,Gullport,FL,2023-10-26
+ACCT-000035,Ada Dunmore,Water,Windmere,WI,2023-09-22
+ACCT-000036,Bram Hartsfield,Electric,Fox Hollow,PA,2022-06-25
+ACCT-000037,Priya Ashgrove,Electric,Elm Grove,IN,2024-12-26
+ACCT-000038,Esme Vasquez,Electric+Gas,Cedar Bluff,TN,2025-01-30
+ACCT-000039,Imani Quintrell,Electric+Gas,Cedar Bluff,TN,2023-03-10
+ACCT-000040,Yusuf Xanthos,Gas,Oak Junction,MO,2023-10-01
+ACCT-000041,Vera Underhill,Water,Stonebridge,VA,2024-06-16
+ACCT-000042,Odette Dunmore,Gas,Oak Junction,MO,2023-04-06
+ACCT-000043,Kaia Abernathy,Gas,Harborview,MI,2023-03-28
+ACCT-000044,Celia Winterbourne,Electric,Milldale,OH,2023-04-14
+ACCT-000045,Cormac Boulware,Water,Harborview,MI,2022-05-26
+ACCT-000046,Hollis Ives,Electric+Gas,Oak Junction,MO,2023-03-15
+ACCT-000047,Esme Xanthos,Electric+Gas,Oak Junction,MO,2023-05-13
+ACCT-000048,Zelda Northcott,Gas,Windmere,WI,2022-07-13
+ACCT-000049,Vera Northcott,Water,Harborview,MI,2024-05-17
+ACCT-000050,Odette Blackwell,Electric,Stonebridge,VA,2022-07-21
+ACCT-000051,Mira Xanthos,Water,Milldale,OH,2022-08-12
+ACCT-000052,Greta Goldwyn,Electric+Gas,Fox Hollow,PA,2022-10-15
+ACCT-000053,Farid Ives,Electric+Gas,Stonebridge,VA,2023-05-27
+ACCT-000054,Odette Zimmerle,Electric,Harborview,MI,2022-04-14
+ACCT-000055,Rosa Ashgrove,Electric,Copper Ridge,AZ,2022-07-11
+ACCT-000056,Farid Northcott,Electric+Gas,Fox Hollow,PA,2024-09-12
+ACCT-000057,Beatrix Marchetti,Electric,Fox Hollow,PA,2022-12-04
+ACCT-000058,Ada Marchetti,Water,Stonebridge,VA,2024-07-20
+ACCT-000059,Nolan Winterbourne,Electric+Gas,Larkspur,CO,2022-11-14
+ACCT-000060,Jasper Goldwyn,Electric,Fox Hollow,PA,2025-04-01
+ACCT-000061,Rosa Boulware,Water,Elm Grove,IN,2022-04-28
+ACCT-000062,Silas Pemberton,Gas,Milldale,OH,2022-04-27
+ACCT-000063,Celia Blackwell,Gas,Oak Junction,MO,2022-05-21
+ACCT-000064,Celia Vasquez,Gas,Pinehurst Flats,NC,2024-04-06
+ACCT-000065,Cormac Sablewood,Gas,Harborview,MI,2025-03-31
+ACCT-000066,Bram Thackeray,Electric,Pinehurst Flats,NC,2024-05-08
+ACCT-000067,Silas Sablewood,Water,Copper Ridge,AZ,2023-06-19
+ACCT-000068,Vera Winterbourne,Water,Fox Hollow,PA,2023-05-04
+ACCT-000069,Mira Eastwick,Water,Larkspur,CO,2024-07-25
+ACCT-000070,Delphine Yarborough,Electric,Gullport,FL,2022-01-20
+ACCT-000071,Tamsin Sablewood,Electric,Windmere,WI,2022-05-31
+ACCT-000072,Greta Quintrell,Water,Oak Junction,MO,2022-09-29
+ACCT-000073,Cormac Castellano,Gas,Gullport,FL,2024-01-27
+ACCT-000074,Farid Okonkwo,Water,Larkspur,CO,2024-12-19
+ACCT-000075,Vera Ashgrove,Water,Milldale,OH,2022-08-01
+ACCT-000076,Imani Dunmore,Electric,Cedar Bluff,TN,2025-02-07
+ACCT-000077,Imani Joubert,Gas,Cedar Bluff,TN,2023-12-04
+ACCT-000078,Vera Underhill,Water,Fox Hollow,PA,2024-11-01
+ACCT-000079,Imani Crowhurst,Electric,Windmere,WI,2022-07-09
+ACCT-000080,Nolan Ashgrove,Water,Copper Ridge,AZ,2022-04-01
+ACCT-000081,Kaia Yarborough,Gas,Milldale,OH,2023-06-21
+ACCT-000082,Xiomara Okonkwo,Electric+Gas,Cedar Bluff,TN,2025-02-22
+ACCT-000083,Dorian Castellano,Gas,Milldale,OH,2025-01-22
+ACCT-000084,Arlo Lindqvist,Gas,Milldale,OH,2024-05-30
+ACCT-000085,Bram Joubert,Water,Cedar Bluff,TN,2022-03-23
+ACCT-000086,Greta Vasquez,Gas,Gullport,FL,2022-07-30
+ACCT-000087,Yusuf Rosewater,Electric+Gas,Gullport,FL,2022-11-13
+ACCT-000088,Beatrix Fairbanks,Gas,Fox Hollow,PA,2024-04-24
+ACCT-000089,Farid Xanthos,Water,Milldale,OH,2024-04-23
+ACCT-000090,Beatrix Xanthos,Gas,Copper Ridge,AZ,2023-07-01
+ACCT-000091,Zelda Winterbourne,Electric,Cedar Bluff,TN,2024-02-23
+ACCT-000092,Beatrix Pemberton,Gas,Milldale,OH,2023-02-13
+ACCT-000093,Lionel Joubert,Gas,Windmere,WI,2023-04-02
+ACCT-000094,Vera Goldwyn,Electric+Gas,Milldale,OH,2023-11-04
+ACCT-000095,Beatrix Castellano,Water,Larkspur,CO,2023-12-21
+ACCT-000096,Quentin Marchetti,Water,Copper Ridge,AZ,2022-02-26
+ACCT-000097,Cormac Ives,Gas,Harborview,MI,2025-04-04
+ACCT-000098,Bram Dunmore,Electric+Gas,Larkspur,CO,2023-12-09
+ACCT-000099,Zelda Kessler,Electric+Gas,Elm Grove,IN,2024-11-13
+ACCT-000100,Mira Crowhurst,Gas,Harborview,MI,2023-06-06
+ACCT-000101,Wendell Northcott,Electric,Milldale,OH,2024-11-30
+ACCT-000102,Vera Xanthos,Gas,Oak Junction,MO,2024-01-16
+ACCT-000103,Celia Vasquez,Water,Stonebridge,VA,2023-10-05
+ACCT-000104,Beatrix Dunmore,Water,Copper Ridge,AZ,2024-11-04
+ACCT-000105,Vera Northcott,Water,Larkspur,CO,2024-04-04
+ACCT-000106,Jasper Rosewater,Gas,Elm Grove,IN,2023-01-28
+ACCT-000107,Vera Marchetti,Gas,Stonebridge,VA,2025-03-11
+ACCT-000108,Mira Rosewater,Electric,Larkspur,CO,2023-09-15
+ACCT-000109,Greta Northcott,Water,Larkspur,CO,2024-08-10
+ACCT-000110,Odette Vasquez,Gas,Windmere,WI,2024-11-12
+ACCT-000111,Zelda Crowhurst,Gas,Windmere,WI,2022-06-23
+ACCT-000112,Quentin Vasquez,Water,Larkspur,CO,2022-07-11
+ACCT-000113,Vera Joubert,Gas,Fox Hollow,PA,2023-02-12
+ACCT-000114,Ada Boulware,Gas,Cedar Bluff,TN,2024-08-31
+ACCT-000115,Beatrix Yarborough,Electric,Pinehurst Flats,NC,2024-07-21
+ACCT-000116,Cormac Underhill,Gas,Stonebridge,VA,2024-02-26
+ACCT-000117,Mira Hartsfield,Gas,Windmere,WI,2022-01-12
+ACCT-000118,Yusuf Northcott,Gas,Harborview,MI,2022-12-27
+ACCT-000119,Quentin Okonkwo,Electric,Elm Grove,IN,2025-02-15
+ACCT-000120,Delphine Blackwell,Electric,Fox Hollow,PA,2024-07-23
+ACCT-000121,Jasper Hartsfield,Electric+Gas,Harborview,MI,2023-11-14
+ACCT-000122,Greta Dovetail,Electric+Gas,Stonebridge,VA,2023-12-31

@@ -1,0 +1,31 @@
+name: dbt CI
+
+# Rebuilds the warehouse from the committed synthetic data and runs
+# `dbt build` (all models + all 43 tests) on every push to main.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Reload DuckDB from committed data
+        run: python warehouse/load_raw.py
+
+      - name: dbt build (models + tests)
+        working-directory: dbt_project
+        run: dbt build --profiles-dir .

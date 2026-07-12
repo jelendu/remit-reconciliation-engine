@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: dim_account
+    description: One row per synthetic customer account.
+    columns:
+      - name: account_id
+        tests: [unique, not_null]
+
+  - name: fct_payments
+    columns:
+      - name: payment_id
+        tests: [unique, not_null]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_id
+
+  - name: fct_utility_charges
+    columns:
+      - name: charge_id
+        tests: [unique, not_null]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_id
+
+  - name: fct_adjustments
+    columns:
+      - name: adjustment_id
+        tests: [unique, not_null]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_id
+
+  - name: fct_reconciliation
+    description: One row per account x remit cycle with all four check verdicts.
+    columns:
+      - name: recon_id
+        tests: [unique, not_null]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_id
+      - name: status
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['GREEN', 'RED']
+
+  - name: recon_export
+    columns:
+      - name: recon_id
+        tests: [unique, not_null]

@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: stg_accounts
+    columns:
+      - name: account_id
+        tests: [unique, not_null]
+  - name: stg_payments
+    columns:
+      - name: payment_id
+        tests: [unique, not_null]
+      - name: account_id
+        tests: [not_null]
+  - name: stg_remits
+    columns:
+      - name: remit_id
+        tests: [unique, not_null]
+      - name: account_id
+        tests: [not_null]
+  - name: stg_utility_charges
+    columns:
+      - name: charge_id
+        tests: [unique, not_null]
+      - name: account_id
+        tests: [not_null]
+  - name: stg_cust_charges
+    columns:
+      - name: cust_charge_id
+        tests: [unique, not_null]
+  - name: stg_adjustment_amts
+    columns:
+      - name: adjustment_id
+        tests: [unique, not_null]
+  - name: stg_adjustments
+    columns:
+      - name: adjustments_id
+        tests: [unique, not_null]
+  - name: stg_export_rc
+    columns:
+      - name: export_id
+        tests: [unique, not_null]

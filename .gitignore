@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.python-version
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+logs/
+
+# DuckDB transient files (the .duckdb file itself IS committed on purpose —
+# it is the bundled warehouse the Streamlit app reads)
+*.duckdb.wal
+*.duckdb.tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+dbt_project/.user.yml

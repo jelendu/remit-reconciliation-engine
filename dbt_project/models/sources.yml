@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Synthetic utility-billing entities loaded by warehouse/load_raw.py
+    database: raw
+    schema: raw
+    tables:
+      - name: accounts
+      - name: payments
+      - name: remits
+      - name: utility_charges
+      - name: cust_charges
+      - name: adjustment_amts
+      - name: adjustments
+      - name: export_rc
