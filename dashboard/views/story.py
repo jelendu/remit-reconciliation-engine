@@ -30,7 +30,7 @@ with c1:
                  label="Watch it reconcile an account →", icon="🔬")
 with c2:
     st.page_link("views/pipeline.py",
-                 label="See the pipeline & 61 tests →", icon="🛠️")
+                 label="See the pipeline & 43 tests →", icon="🛠️")
 with c3:
     st.page_link("views/operations.py",
                  label="Open the operations dashboard →", icon="📊")

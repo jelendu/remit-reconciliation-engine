@@ -7,6 +7,9 @@
 
 Payments come in. The books say something else. This engine finds every mismatch — automatically.
 
+[![The reconciliation workbench — watch a duplicate payment get caught and zeroed](docs/workbench.png)](https://remit-reconciliation-engine.streamlit.app/workbench)
+*The reconciliation workbench: a duplicate $341.50 payment inflates the column to $1,150.99; the engine zeroes the duplicate (amber row — original preserved, nothing edited) and ties out to the $809.49 remit. [Try it live.](https://remit-reconciliation-engine.streamlit.app/workbench)*
+
 A production-style rebuild of a real reconciliation workflow: a utility-billing remittance feed that **changes every cycle** (payments post, services get cancelled, adjustments land — originally SQL Server extracts reconciled in Excel), rebuilt as a tested SQL pipeline that repairs what it can, proves what it did, and routes what it can't fix to a human.
 
 > **All data is 100% synthetic and self-generated.** No real company names, account
@@ -14,6 +17,8 @@ A production-style rebuild of a real reconciliation workflow: a utility-billing 
 > a common remittance-reconciliation pattern in generic terms.
 
 ## The app (start here)
+
+[![The landing page — the problem, the method, and guided demo paths](docs/landing.png)](https://remit-reconciliation-engine.streamlit.app/)
 
 | Page | What you'll see |
 |---|---|
