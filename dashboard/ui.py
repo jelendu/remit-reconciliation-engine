@@ -20,14 +20,18 @@ DB_PATH = ROOT / "warehouse" / "raw.duckdb"
 ARTIFACTS = ROOT / "dbt_project" / "artifacts"
 REPO_URL = "https://github.com/jelendu/remit-reconciliation-engine"
 
-# ---- palette (dataviz reference instance) --------------------------------
-BLUE, BLUE_DARK = "#2a78d6", "#1c5cab"
+# ---- palette --------------------------------------------------------------
+# Chrome: Claude-inspired warm tan surfaces + terracotta accent.
+# Data ink: the validated dataviz series blue and reserved status colors —
+# kept distinct from brand chrome on purpose.
+CLAUDE, CLAUDE_DEEP = "#D97757", "#B4552D"       # terracotta accent / deep (white text safe)
+BLUE, BLUE_DARK = "#2a78d6", "#1c5cab"           # data series
 RED_DIVERGING = "#e34948"
 GOOD, GOOD_TEXT, GOOD_TINT = "#0ca30c", "#006300", "#e5f3e5"
 CRIT, CRIT_TINT = "#d03b3b", "#fbe7e7"
-WARN_TINT = "#fdf3d7"
-INK, INK2, MUTED = "#0b0b0b", "#52514e", "#898781"
-GRID, AXIS, SURFACE2 = "#e1e0d9", "#c3c2b7", "#f2f1ec"
+WARN_TINT = "#FAE8B8"
+INK, INK2, MUTED = "#201A15", "#5A5147", "#8E8272"
+GRID, AXIS, SURFACE2 = "#E2D5C2", "#C6B69F", "#EFE3D3"
 
 CHECK = {True: "✅", False: "❌"}
 
@@ -41,7 +45,7 @@ CSS = f"""
   display: inline-flex; align-items: center; gap: .4rem;
   border: 1px solid {GRID}; border-radius: 999px;
   padding: .15rem .7rem; font-size: .8rem; color: {INK2};
-  background: #ffffff; margin-right: .4rem; white-space: nowrap;
+  background: #FBF6EE; margin-right: .4rem; white-space: nowrap;
 }}
 .rre-badge .dot {{
   width: .55rem; height: .55rem; border-radius: 50%;
@@ -53,7 +57,7 @@ CSS = f"""
 .rre-step {{ display: flex; gap: .8rem; margin: .65rem 0; align-items: flex-start; }}
 .rre-step .n {{
   flex: 0 0 1.7rem; height: 1.7rem; border-radius: 50%;
-  background: {BLUE}; color: #fff; font-weight: 700;
+  background: {CLAUDE_DEEP}; color: #fff; font-weight: 700;
   display: flex; align-items: center; justify-content: center; font-size: .95rem;
 }}
 .rre-step .t b {{ display: block; }}

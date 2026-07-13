@@ -1,11 +1,12 @@
-# Designed light theme — the app renders identically for every visitor
-# (status-tinted table rows are specified against this surface).
+# Claude-inspired warm theme: light tan surfaces from the terracotta hue
+# family (#D97757), warm near-black ink. The app renders identically for
+# every visitor; styled table rows always pair background with text color.
 [theme]
 base = "light"
-primaryColor = "#2a78d6"
-backgroundColor = "#fcfcfb"
-secondaryBackgroundColor = "#f2f1ec"
-textColor = "#0b0b0b"
+primaryColor = "#D97757"
+backgroundColor = "#F4E9DD"
+secondaryBackgroundColor = "#EBDCCB"
+textColor = "#201A15"
 
 [server]
 headless = true
