@@ -43,12 +43,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data_gen/output warehouse/raw.duckdb
+          git add data_gen/output warehouse/raw.duckdb dbt_project/artifacts
           if git diff --cached --quiet; then
             echo "nothing changed, skipping commit"
             exit 0
           fi
           batch=$(python -c "import pandas as pd; print(sorted(pd.read_csv('data_gen/output/remits.csv').batch_id.unique())[-1])")
           git commit -m "chore: scheduled synthetic refresh ($batch)"
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
           git push
