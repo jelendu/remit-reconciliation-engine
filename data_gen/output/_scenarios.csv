@@ -1568,3 +1568,35 @@ ACCT-000092,B0045,clean,,2026-07-17T18:32:26+00:00
 ACCT-000245,B0045,clean,,2026-07-17T18:32:26+00:00
 ACCT-000246,B0045,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-17T18:32:26+00:00
 ACCT-000247,B0045,clean,,2026-07-17T18:32:26+00:00
+ACCT-000062,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000007,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000039,B0046,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-07-17T20:00:13+00:00
+ACCT-000094,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000138,B0046,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-17T20:00:13+00:00
+ACCT-000204,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000025,B0046,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-07-17T20:00:13+00:00
+ACCT-000155,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000172,B0046,rc_misreport,Export reports a phantom R-C difference,2026-07-17T20:00:13+00:00
+ACCT-000179,B0046,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-17T20:00:13+00:00
+ACCT-000246,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000140,B0046,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-17T20:00:13+00:00
+ACCT-000024,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000227,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000027,B0046,dup_unfixable,Payment detail short of remit; no duplicates to zero out,2026-07-17T20:00:13+00:00
+ACCT-000063,B0046,rc_misreport,Export reports a phantom R-C difference,2026-07-17T20:00:13+00:00
+ACCT-000136,B0046,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-17T20:00:13+00:00
+ACCT-000074,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000139,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000162,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000086,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000052,B0046,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-17T20:00:13+00:00
+ACCT-000247,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000096,B0046,total_fail,Every check seeded to fail,2026-07-17T20:00:13+00:00
+ACCT-000174,B0046,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-17T20:00:13+00:00
+ACCT-000192,B0046,clean,,2026-07-17T20:00:13+00:00
+ACCT-000226,B0046,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-17T20:00:13+00:00
+ACCT-000072,B0046,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-17T20:00:13+00:00
+ACCT-000053,B0046,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-17T20:00:13+00:00
+ACCT-000188,B0046,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-17T20:00:13+00:00
+ACCT-000248,B0046,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-17T20:00:13+00:00
+ACCT-000249,B0046,rc_misreport,Export reports a phantom R-C difference,2026-07-17T20:00:13+00:00
