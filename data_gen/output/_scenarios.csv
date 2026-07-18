@@ -2118,3 +2118,40 @@ ACCT-000170,B0062,clean,,2026-07-18T18:28:11+00:00
 ACCT-000299,B0062,rc_misreport,Export reports a phantom R-C difference,2026-07-18T18:28:11+00:00
 ACCT-000300,B0062,clean,,2026-07-18T18:28:11+00:00
 ACCT-000301,B0062,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-18T18:28:11+00:00
+ACCT-000154,B0063,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-07-18T19:41:46+00:00
+ACCT-000076,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000070,B0063,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-18T19:41:46+00:00
+ACCT-000164,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000147,B0063,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-18T19:41:46+00:00
+ACCT-000197,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000260,B0063,rc_misreport,Export reports a phantom R-C difference,2026-07-18T19:41:46+00:00
+ACCT-000006,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000085,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000248,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000297,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000099,B0063,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-18T19:41:46+00:00
+ACCT-000250,B0063,rc_misreport,Export reports a phantom R-C difference,2026-07-18T19:41:46+00:00
+ACCT-000237,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000152,B0063,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-18T19:41:46+00:00
+ACCT-000004,B0063,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-18T19:41:46+00:00
+ACCT-000239,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000236,B0063,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-18T19:41:46+00:00
+ACCT-000113,B0063,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-07-18T19:41:46+00:00
+ACCT-000074,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000101,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000026,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000168,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000276,B0063,known_diff,Remit short vs charges; difference disclosed on export,2026-07-18T19:41:46+00:00
+ACCT-000119,B0063,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-18T19:41:46+00:00
+ACCT-000241,B0063,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-18T19:41:46+00:00
+ACCT-000175,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000095,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000284,B0063,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-18T19:41:46+00:00
+ACCT-000092,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000047,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000233,B0063,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-18T19:41:46+00:00
+ACCT-000016,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000126,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000302,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000303,B0063,clean,,2026-07-18T19:41:46+00:00
+ACCT-000304,B0063,clean,,2026-07-18T19:41:46+00:00
