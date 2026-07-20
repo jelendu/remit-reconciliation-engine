@@ -3109,3 +3109,35 @@ ACCT-000301,B0092,clean,,2026-07-20T20:47:08+00:00
 ACCT-000126,B0092,clean,,2026-07-20T20:47:08+00:00
 ACCT-000391,B0092,clean,,2026-07-20T20:47:08+00:00
 ACCT-000392,B0092,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-20T20:47:08+00:00
+ACCT-000050,B0093,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-20T21:56:08+00:00
+ACCT-000077,B0093,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-20T21:56:08+00:00
+ACCT-000183,B0093,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-20T21:56:08+00:00
+ACCT-000238,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000236,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000054,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000081,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000221,B0093,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-07-20T21:56:08+00:00
+ACCT-000351,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000324,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000385,B0093,dup_unfixable,Payment detail short of remit; no duplicates to zero out,2026-07-20T21:56:08+00:00
+ACCT-000088,B0093,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-07-20T21:56:08+00:00
+ACCT-000219,B0093,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-20T21:56:08+00:00
+ACCT-000141,B0093,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-20T21:56:08+00:00
+ACCT-000062,B0093,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-20T21:56:08+00:00
+ACCT-000200,B0093,dup_payment,Duplicate payment row inflates SUM(Payment),2026-07-20T21:56:08+00:00
+ACCT-000233,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000375,B0093,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-20T21:56:08+00:00
+ACCT-000182,B0093,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-20T21:56:08+00:00
+ACCT-000392,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000014,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000023,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000044,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000312,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000161,B0093,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-20T21:56:08+00:00
+ACCT-000007,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000311,B0093,payment_short,Payment detail short of remit; no duplicates to zero out,2026-07-20T21:56:08+00:00
+ACCT-000353,B0093,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-20T21:56:08+00:00
+ACCT-000249,B0093,rc_misreport,Export reports a phantom R-C difference,2026-07-20T21:56:08+00:00
+ACCT-000393,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000394,B0093,clean,,2026-07-20T21:56:08+00:00
+ACCT-000395,B0093,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-07-20T21:56:08+00:00
