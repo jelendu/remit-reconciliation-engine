@@ -5567,3 +5567,35 @@ ACCT-000495,B0166,clean,,2026-07-26T07:31:56+00:00
 ACCT-000481,B0166,rc_misreport,Export reports a phantom R-C difference,2026-07-26T07:31:56+00:00
 ACCT-000611,B0166,clean,,2026-07-26T07:31:56+00:00
 ACCT-000612,B0166,clean,,2026-07-26T07:31:56+00:00
+ACCT-000012,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000021,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000501,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000565,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000589,B0167,total_fail,Every check seeded to fail,2026-07-26T09:52:17+00:00
+ACCT-000220,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000198,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000563,B0167,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-07-26T09:52:17+00:00
+ACCT-000398,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000056,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000008,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000298,B0167,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-07-26T09:52:17+00:00
+ACCT-000160,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000193,B0167,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-26T09:52:17+00:00
+ACCT-000330,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000493,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000424,B0167,total_fail,Every check seeded to fail,2026-07-26T09:52:17+00:00
+ACCT-000088,B0167,rc_misreport,Export reports a phantom R-C difference,2026-07-26T09:52:17+00:00
+ACCT-000293,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000218,B0167,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-26T09:52:17+00:00
+ACCT-000284,B0167,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-07-26T09:52:17+00:00
+ACCT-000480,B0167,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-26T09:52:17+00:00
+ACCT-000512,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000264,B0167,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-07-26T09:52:17+00:00
+ACCT-000348,B0167,rc_misreport,Export reports a phantom R-C difference,2026-07-26T09:52:17+00:00
+ACCT-000036,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000190,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000007,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000613,B0167,charge_mismatch,CustCharge summary drifted from charge detail,2026-07-26T09:52:17+00:00
+ACCT-000614,B0167,rc_misreport,Export reports a phantom R-C difference,2026-07-26T09:52:17+00:00
+ACCT-000615,B0167,clean,,2026-07-26T09:52:17+00:00
+ACCT-000616,B0167,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-07-26T09:52:17+00:00
