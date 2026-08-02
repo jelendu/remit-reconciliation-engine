@@ -8556,3 +8556,34 @@ ACCT-000905,B0257,charge_mismatch,CustCharge summary drifted from charge detail,
 ACCT-000906,B0257,clean,,2026-08-02T07:28:24+00:00
 ACCT-000907,B0257,clean,,2026-08-02T07:28:24+00:00
 ACCT-000908,B0257,clean,,2026-08-02T07:28:24+00:00
+ACCT-000627,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000691,B0258,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-02T09:33:11+00:00
+ACCT-000493,B0258,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-02T09:33:11+00:00
+ACCT-000683,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000721,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000237,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000587,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000152,B0258,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-08-02T09:33:11+00:00
+ACCT-000900,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000685,B0258,rc_misreport,Export reports a phantom R-C difference,2026-08-02T09:33:11+00:00
+ACCT-000220,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000614,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000144,B0258,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-02T09:33:11+00:00
+ACCT-000769,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000201,B0258,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-02T09:33:11+00:00
+ACCT-000206,B0258,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-02T09:33:11+00:00
+ACCT-000760,B0258,known_diff,Remit short vs charges; difference disclosed on export,2026-08-02T09:33:11+00:00
+ACCT-000418,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000409,B0258,rc_misreport,Export reports a phantom R-C difference,2026-08-02T09:33:11+00:00
+ACCT-000460,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000660,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000708,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000321,B0258,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-02T09:33:11+00:00
+ACCT-000480,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000406,B0258,rc_misreport,Export reports a phantom R-C difference,2026-08-02T09:33:11+00:00
+ACCT-000631,B0258,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-02T09:33:11+00:00
+ACCT-000017,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000370,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000909,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000910,B0258,clean,,2026-08-02T09:33:11+00:00
+ACCT-000911,B0258,clean,,2026-08-02T09:33:11+00:00
