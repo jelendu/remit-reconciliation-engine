@@ -11179,3 +11179,35 @@ ACCT-000768,B0336,clean,,2026-08-08T08:30:26+00:00
 ACCT-000857,B0336,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-08T08:30:26+00:00
 ACCT-001141,B0336,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-08-08T08:30:26+00:00
 ACCT-001142,B0336,total_fail,Every check seeded to fail,2026-08-08T08:30:26+00:00
+ACCT-000826,B0337,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-08T09:11:37+00:00
+ACCT-000830,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000986,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000216,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000070,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-001107,B0337,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-08T09:11:37+00:00
+ACCT-000913,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000834,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000305,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000932,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000222,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000393,B0337,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-08T09:11:37+00:00
+ACCT-000680,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000553,B0337,payment_short,Payment detail short of remit; no duplicates to zero out,2026-08-08T09:11:37+00:00
+ACCT-000510,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000425,B0337,rc_misreport,Export reports a phantom R-C difference,2026-08-08T09:11:37+00:00
+ACCT-000291,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000063,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000363,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000758,B0337,total_fail,Every check seeded to fail,2026-08-08T09:11:37+00:00
+ACCT-001000,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000956,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000470,B0337,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-08-08T09:11:37+00:00
+ACCT-000169,B0337,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-08T09:11:37+00:00
+ACCT-000671,B0337,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-08T09:11:37+00:00
+ACCT-000165,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-000355,B0337,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-08-08T09:11:37+00:00
+ACCT-000481,B0337,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-08T09:11:37+00:00
+ACCT-001143,B0337,total_fail,Every check seeded to fail,2026-08-08T09:11:37+00:00
+ACCT-001144,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-001145,B0337,clean,,2026-08-08T09:11:37+00:00
+ACCT-001146,B0337,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-08T09:11:37+00:00
