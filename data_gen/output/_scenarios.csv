@@ -12090,3 +12090,32 @@ ACCT-000688,B0364,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),20
 ACCT-000637,B0364,clean,,2026-08-09T04:43:51+00:00
 ACCT-001226,B0364,clean,,2026-08-09T04:43:51+00:00
 ACCT-001227,B0364,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-09T04:43:51+00:00
+ACCT-001041,B0365,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-09T05:41:54+00:00
+ACCT-000014,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000629,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000154,B0365,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-09T05:41:54+00:00
+ACCT-000437,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000737,B0365,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-08-09T05:41:54+00:00
+ACCT-001187,B0365,rc_misreport,Export reports a phantom R-C difference,2026-08-09T05:41:54+00:00
+ACCT-000374,B0365,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-09T05:41:54+00:00
+ACCT-001010,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000948,B0365,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-09T05:41:54+00:00
+ACCT-000782,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000329,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-001020,B0365,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-09T05:41:54+00:00
+ACCT-001205,B0365,rc_misreport,Export reports a phantom R-C difference,2026-08-09T05:41:54+00:00
+ACCT-001193,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-001030,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000713,B0365,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-08-09T05:41:54+00:00
+ACCT-000470,B0365,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-09T05:41:54+00:00
+ACCT-000933,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000704,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000904,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-001000,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-000458,B0365,total_fail,Every check seeded to fail,2026-08-09T05:41:54+00:00
+ACCT-000688,B0365,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-09T05:41:54+00:00
+ACCT-000563,B0365,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-09T05:41:54+00:00
+ACCT-001228,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-001229,B0365,clean,,2026-08-09T05:41:54+00:00
+ACCT-001230,B0365,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-08-09T05:41:54+00:00
+ACCT-001231,B0365,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-09T05:41:54+00:00
