@@ -13143,3 +13143,30 @@ ACCT-000551,B0395,dup_adjustment,Duplicate adjustment row inflates SUM(Adjustmen
 ACCT-001320,B0395,clean,,2026-08-10T08:22:20+00:00
 ACCT-001321,B0395,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-10T08:22:20+00:00
 ACCT-001322,B0395,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-10T08:22:20+00:00
+ACCT-000288,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000066,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-001172,B0396,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-10T09:55:44+00:00
+ACCT-000986,B0396,known_diff,Remit short vs charges; difference disclosed on export,2026-08-10T09:55:44+00:00
+ACCT-000521,B0396,payment_short,Payment detail short of remit; no duplicates to zero out,2026-08-10T09:55:44+00:00
+ACCT-000046,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000004,B0396,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-10T09:55:44+00:00
+ACCT-001146,B0396,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-10T09:55:44+00:00
+ACCT-000399,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-001135,B0396,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-10T09:55:44+00:00
+ACCT-000354,B0396,total_fail,Every check seeded to fail,2026-08-10T09:55:44+00:00
+ACCT-000387,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000436,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000656,B0396,total_fail,Every check seeded to fail,2026-08-10T09:55:44+00:00
+ACCT-000115,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000070,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-001138,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000997,B0396,total_fail,Every check seeded to fail,2026-08-10T09:55:44+00:00
+ACCT-000744,B0396,known_diff,Remit short vs charges; difference disclosed on export,2026-08-10T09:55:44+00:00
+ACCT-001040,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000641,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-000405,B0396,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-08-10T09:55:44+00:00
+ACCT-001090,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-001236,B0396,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-08-10T09:55:44+00:00
+ACCT-000874,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-001323,B0396,clean,,2026-08-10T09:55:44+00:00
+ACCT-001324,B0396,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-08-10T09:55:44+00:00
