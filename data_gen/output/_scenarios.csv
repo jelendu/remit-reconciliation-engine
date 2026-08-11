@@ -13710,3 +13710,32 @@ ACCT-000131,B0412,clean,,2026-08-11T03:27:55+00:00
 ACCT-001375,B0412,clean,,2026-08-11T03:27:55+00:00
 ACCT-001376,B0412,clean,,2026-08-11T03:27:55+00:00
 ACCT-001377,B0412,clean,,2026-08-11T03:27:55+00:00
+ACCT-001328,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001113,B0413,total_fail,Every check seeded to fail,2026-08-11T04:49:00+00:00
+ACCT-000561,B0413,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-11T04:49:00+00:00
+ACCT-000349,B0413,rc_misreport,Export reports a phantom R-C difference,2026-08-11T04:49:00+00:00
+ACCT-000116,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001160,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000943,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000575,B0413,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-08-11T04:49:00+00:00
+ACCT-000658,B0413,known_diff,Remit short vs charges; difference disclosed on export,2026-08-11T04:49:00+00:00
+ACCT-000975,B0413,dup_payment,Duplicate payment row inflates SUM(Payment),2026-08-11T04:49:00+00:00
+ACCT-000604,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001221,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000289,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000127,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001142,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000445,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000175,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000846,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001337,B0413,dup_charge,Duplicate charge row inflates SUM(UtilityCharge),2026-08-11T04:49:00+00:00
+ACCT-000498,B0413,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-11T04:49:00+00:00
+ACCT-000840,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-000753,B0413,rc_misreport,Export reports a phantom R-C difference,2026-08-11T04:49:00+00:00
+ACCT-000899,B0413,dup_unfixable,Payment detail short of remit; no duplicates to zero out,2026-08-11T04:49:00+00:00
+ACCT-000607,B0413,charge_mismatch,CustCharge summary drifted from charge detail,2026-08-11T04:49:00+00:00
+ACCT-000435,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001378,B0413,adj_mismatch,Adjustments summary drifted from adjustment detail,2026-08-11T04:49:00+00:00
+ACCT-001379,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001380,B0413,clean,,2026-08-11T04:49:00+00:00
+ACCT-001381,B0413,dup_adjustment,Duplicate adjustment row inflates SUM(AdjustmentAmt),2026-08-11T04:49:00+00:00
